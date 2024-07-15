@@ -1,0 +1,93 @@
+body{
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+#container{
+    display: grid;
+    grid-template-columns: 295px 600px;
+    grid-template-rows:400px 50px;
+    grid-template-areas: "I T"
+                         "pro inter";
+    gap:15px;
+    margin-left: calc( 50% - 455px );
+}
+#I{
+    grid-area: I;
+}
+#T{
+    grid-area: T;
+    background-color: aliceblue;
+}
+#pro{
+    grid-area: pro;
+}
+#inter{
+    grid-area: inter;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.radd{
+    border-radius: 15px;
+}
+.rad{
+    border-radius: 15px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+#pic{
+    width: 0px;
+}
+
+@media screen and (max-width: 725px){
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:80px 355px 400px 40px;
+        grid-template-areas: "pro inter"
+                             "II  II"
+                             "T   T"
+                             "I   I";
+        gap:15px;
+        justify-items: center;
+        margin-left: 3%;
+        
+    }
+    #T{
+        grid-area: T;
+        background-color: aliceblue;
+        
+    }
+    #I{
+        grid-area:I;
+        
+    
+
+    }
+    .rad{
+        width: 0px;
+    }
+
+    
+    #II{
+        grid-area:II;
+        align-items: center;
+        align-content: center;
+    }
+    
+    #pic {
+        width: 533px;
+        height: 355px;
+        border-radius: 15px;
+       
+    
+    }
+    
+}
