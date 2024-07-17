@@ -69,45 +69,26 @@ h2{
 @media screen and (max-width: 725px){
     #container{
         display: grid;
+
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:80px 355px 400px 40px;
-        grid-template-areas: "pro inter"
-                             "II  II"
-                             "T   T"
-                             "I   I";
-        gap:15px;
+        grid-template-rows: 10vh 30vh 30vh 10vh;
+        grid-template-areas: "titulo        titulo"
+                             "imagem        imagem"
+                             "lista        lista"
+                             "interpretacao producao";
+                             
+
         justify-items: center;
-        margin-left: 3%;
-        
-    }
-    #T{
-        grid-area: T;
-        background-color: aliceblue;
-        
-    }
-    #I{
-        grid-area:I;
-        
-    
-
-    }
-    .rad{
-        width: 0px;
     }
 
     
-    #II{
-        grid-area:II;
-        align-items: center;
-        align-content: center;
+    #imagem2{
+        display: block;
     }
-    
-    #pic {
-        width: 355px;
-        height: 236px;
-        border-radius: 15px;
-       
-    
-    }
-    
+
+
+    #imagem1{
+        display: none;
+    }    
+
 }
