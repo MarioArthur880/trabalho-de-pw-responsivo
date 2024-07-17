@@ -80,14 +80,15 @@ h2{
         justify-items: center;
     }
 
+    #imagem1{
+        display: none;
+    }  
     
     #imagem2{
         display: block;
     }
 
 
-    #imagem1{
-        display: none;
-    }    
+  
 
 }
