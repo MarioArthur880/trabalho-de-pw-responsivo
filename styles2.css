@@ -137,5 +137,11 @@ p {
         height: 355px;
         border-radius: 15px;
     }
+    #inter {
+        grid-area: inter;
+        text-align: justify;
+    }
+    
+    
 
 }
