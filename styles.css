@@ -14,6 +14,13 @@ body{
 #I{
     grid-area: I;
 }
+
+#II{
+    grid-area: II;
+    display: none;
+}
+
+
 #T{
     grid-area: T;
     background-color: aliceblue;
@@ -53,10 +60,10 @@ h2{
         grid-template-rows:80px 355px 400px 40px;
         grid-template-areas: "pro inter"
                              "II  II"
-                             "T   T"
-                             "I   I";
+                             "T   T";
         gap:15px;
         justify-items: center;
+        width: 94%;
         margin-left: 3%;
         
     }
@@ -67,7 +74,7 @@ h2{
     }
     #I{
         grid-area:I;
-        
+        display: none;
     
 
     }
@@ -77,6 +84,7 @@ h2{
 
     
     #II{
+        display: block;
         grid-area:II;
         align-items: center;
         align-content: center;
