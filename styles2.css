@@ -145,3 +145,21 @@ p {
     
 
 }
+
+.bloco{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+
+    grid-template-areas: "imagem texto";o
+    gap: 35px;
+}
+
+.imagem{
+    grid-area: imagem;
+}
+
+.texto{
+    grid-area: texto;
+}
