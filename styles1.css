@@ -29,6 +29,7 @@ h1{
                         gap: 15px;
 }
 
+
 #inter{
     grid-area: inter;
     text-align: center;
@@ -43,17 +44,20 @@ h1{
     border-radius: 15px;
 }
 #texto-6{
+    padding: 10px;
     grid-area: texto-6;
     background-color: aliceblue;
     margin-right: 10px;
     border-radius: 15px;
 }
 #texto-7{
+    padding: 10px;
     grid-area: texto-7;
     background-color: aliceblue;
     margin-right: 10px;
     border-radius: 15px;
 }
+
 .imagem-2{
     grid-area: imagem-2;
     border-radius: 15px;
@@ -71,12 +75,15 @@ h1{
     border-radius: 15px;
 }
 .texto-2{
+    padding: 10px;
     grid-area: texto-2;
     border-radius: 15px;
     background-color: aliceblue;
     margin-right: 10px;
+    box-sizing: border-box;
 }
 .texto-3{
+    padding: 10px;
     grid-area: texto-3;
     border-radius: 15px;
     background-color: aliceblue;
@@ -84,6 +91,7 @@ h1{
 
 }
 .texto-4{
+    padding: 10px;
     grid-area: texto-4;
     border-radius: 15px;
     background-color: aliceblue;
@@ -91,6 +99,7 @@ h1{
 
 }
 .texto-5{
+    padding: 10px;
     grid-area: texto-5;
     border-radius: 15px;
     background-color: aliceblue;
@@ -108,7 +117,8 @@ h1{
     border-radius: 15px;
 }
 #text-al{
-    text-align: center;
+    width: fit-content;
+    text-align: justify;
     font-size: 25px;
     font-weight: 100;
 }
@@ -125,7 +135,7 @@ a{
     color: black;
     text-decoration: none;
 }
-@media screen and ( max-width:725px) {
+@media screen and ( max-width:600px) {
     .container{
 
         display: grid;
@@ -134,13 +144,69 @@ a{
         grid-template-rows: 80px 380px 700px 380px 650px 380px 600px 380px 500px 380px 450px;
          
         grid-template-areas: "inter "
-                             "imagem-2" "texto-2"
-                             "imagem-3" "texto-3"
-                             "imagem-4" "texto-4"
-                             "imagem-5" "texto-5"
-                             "imagem-6" "texto-6"
-                             "imagem-7" "texto-7";
+                             "imagem-2" 
+                             "texto-2"
+                             "imagem-3" 
+                             "texto-3"
+                             "imagem-4" 
+                             "texto-4"
+                             "imagem-5" 
+                             "texto-5"
+                             "imagem-6" 
+                             "texto-6"
+                             "imagem-7" 
+                             "texto-7";
                             gap: 15px;
+        justify-items: center;
+    }
+
+    #text-al{
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 80;
     }
     
+    #text-ali{
+        text-align: center;
+        font-size: 1,5em;
+        font-weight: 80;
+    }
+    
+}
+@media screen and ( max-width:1400px) and (min-width:600px){
+    .container{
+
+        display: grid;
+    
+        grid-template-columns: 1fr ;
+        grid-template-rows: 80px 380px 700px 380px 650px 380px 600px 380px 500px 380px 450px;
+         
+        grid-template-areas: "inter "
+                             "imagem-2" 
+                             "texto-2"
+                             "imagem-3" 
+                             "texto-3"
+                             "imagem-4" 
+                             "texto-4"
+                             "imagem-5" 
+                             "texto-5"
+                             "imagem-6" 
+                             "texto-6"
+                             "imagem-7" 
+                             "texto-7";
+        gap: 15px;
+        justify-items: center;
+    }
+
+    #text-al{
+        width: fit-content;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    
+    #text-ali{
+        text-align: justify;
+        font-size: 30px;
+        font-weight: 100;
+    }
 }

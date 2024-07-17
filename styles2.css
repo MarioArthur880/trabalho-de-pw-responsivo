@@ -104,7 +104,7 @@ p {
     margin-right: 3%;
 }
 
-@media screen and (max-width:725px) {
+@media screen and (max-width:1610px)  {
     .container {
 
         display: grid;
