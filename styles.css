@@ -9,26 +9,41 @@ body{
 }
 #container{
     display: grid;
-    grid-template-columns: 295px 600px;
-    grid-template-rows:400px 50px;
-    grid-template-areas: "I T"
-                         "pro inter";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10vh 40vh 10vh;
+    grid-template-areas: "titulo        titulo"
+                         "imagem        lista"
+                         "interpretacao producao";
     gap:15px;
     margin-left: calc( 50% - 455px );
 }
-#I{
-    grid-area: I;
+
+#titulo{
+    grid-area: titulo;
 }
-#T{
-    grid-area: T;
+
+#imagem{
+    grid-area: imagem;
+}
+
+#lista{
+    grid-area: lista;
     background-color: aliceblue;
 }
-#pro{
-    grid-area: pro;
+
+#interpretacao{
+    grid-area: interpretacao;
 }
-#inter{
-    grid-area: inter;
+
+#producao{
+    grid-area: producao;
 }
+
+#imagem2{
+    display: none;
+}
+
+
 h1{
     text-align: center;
     font-size: 50px;
