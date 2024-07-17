@@ -7,7 +7,7 @@ body{
     grid-template-columns: 295px 600px;
     grid-template-rows:400px 50px;
     grid-template-areas: "I T"
-                         "pro inter";
+                        "pro inter";
     gap:15px;
     margin-left: calc( 50% - 455px );
 }
