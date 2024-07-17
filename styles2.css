@@ -33,7 +33,7 @@ h1 {
 
 #inter {
     grid-area: inter;
-    text-align: center;
+    text-align: justify;
     word-spacing: 100px;
 }
 
