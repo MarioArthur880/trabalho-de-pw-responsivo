@@ -6,7 +6,6 @@
 body{
     margin-top: 25px;
     font-family: sans-serif;
-    margin-left: 3%;
 }
 
 
@@ -43,7 +42,6 @@ h1{
         "opcoes";
     gap: 35px;
     justify-content: space-between;
-    grid-area: inter;
     text-align: center;
     word-spacing: 100px;
 }
