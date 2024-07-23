@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0px;
     padding: 0px;
 }
@@ -140,7 +140,7 @@ a{
     color: black;
     text-decoration: none;
 }
-@media screen and ( max-width:600px) {
+@media screen and ( max-width:1200px) {
     .container{
 
         display: grid;
