@@ -23,9 +23,42 @@ h1{
     grid-template-columns: 20% 80% ;
     grid-template-rows: auto;
     
-    grid-template-areas: "inter inter"
-                         "imagem texto";
+    grid-template-areas: "inter"
+                         "bloco1"
+                         "bloco2"
+                         "bloco3"
+                         "bloco4"
+                         "bloco5"
+                         "bloco6";
                         gap: 15px;
+}
+#bloco1 {
+    grid-area: bloco1;
+}
+#bloco2 {
+    grid-area: bloco2;
+}
+#bloco3 {
+    grid-area: bloco3;
+}
+#bloco4 {
+    grid-area: bloco4;
+}
+#bloco5 {
+    grid-area: bloco4;
+}
+#bloco6 {
+    grid-area: bloco4;
+}
+.bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagem texto";
+    gap: 35px;
+    padding: 5px;
+    overflow: hidden;
+    align-items: center;
 }
 
 
@@ -57,6 +90,9 @@ h1{
 .imagem{
     grid-area: imagem;
     border-radius: 15px;
+    height: 380px;
+    width: 275px;
+    border-radius: 15px;
 }
 .texto{
     padding: 10px;
@@ -68,11 +104,7 @@ h1{
 }
 
 
-.pic{ 
-    height: 380px;
-    width: 275px;
-    border-radius: 15px;
-}
+
 #text-al{
     width: fit-content;
     text-align: justify;
@@ -100,7 +132,12 @@ a{
         grid-template-columns: 1fr ;
         grid-template-rows:auto ;
          
-        grid-template-areas:"imagem" "texto";
+        grid-template-areas:"bloco1"
+                            "bloco2"
+                            "bloco3"
+                            "bloco4"
+                            "bloco5"
+                            "bloco6";
                             gap: 15px;
         justify-items: center;
     }
