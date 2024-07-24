@@ -45,10 +45,10 @@ h1{
     grid-area: bloco4;
 }
 #bloco5 {
-    grid-area: bloco4;
+    grid-area: bloco5;
 }
 #bloco6 {
-    grid-area: bloco4;
+    grid-area: bloco6;
 }
 .bloco{
     display: grid;
@@ -76,7 +76,7 @@ h1{
     gap: 35px;
     justify-content: space-between;
     text-align: center;
-    word-spacing: 100px;
+    
 }
 .adam{
     grid-area: adam;
@@ -132,7 +132,8 @@ a{
         grid-template-columns: 1fr ;
         grid-template-rows:auto ;
          
-        grid-template-areas:"bloco1"
+        grid-template-areas:"inter"
+                            "bloco1"
                             "bloco2"
                             "bloco3"
                             "bloco4"
