@@ -73,7 +73,7 @@ h2{
         grid-template-areas: "bloco1 bloco1"
                              "II  II"
                              "T   T";
-        gap:15px;
+        gap:50px;
         justify-items: center;
         width: 94%;
         margin-left: 3%;
@@ -81,9 +81,10 @@ h2{
     }
     .bloco{
         display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:"pro" "inter"
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"pro" "inter"
+        
     }
     #T{
         grid-area: T;
