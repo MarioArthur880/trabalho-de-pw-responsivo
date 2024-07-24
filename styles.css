@@ -7,10 +7,27 @@ body{
     grid-template-columns: 295px 600px;
     grid-template-rows:400px 50px;
     grid-template-areas: "I T"
-                        "pro inter";
+                        "bloco1 bloco1";
     gap:15px;
     margin-left: calc( 50% - 455px );
 }
+#bloco1{
+    grid-area: bloco1;
+}
+.bloco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"pro inter";
+
+}
+.pro{
+    grid-area: pro;
+}
+.inter{
+    grid-area: inter;
+}
+
 #I{
     grid-area: I;
 }
@@ -25,12 +42,7 @@ body{
     grid-area: T;
     background-color: aliceblue;
 }
-#pro{
-    grid-area: pro;
-}
-#inter{
-    grid-area: inter;
-}
+
 h1{
     text-align: center;
     font-size: 50px;
@@ -58,7 +70,7 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:80px 355px 400px 40px;
-        grid-template-areas: "pro inter"
+        grid-template-areas: "bloco1 bloco1"
                              "II  II"
                              "T   T";
         gap:15px;
@@ -66,6 +78,12 @@ h2{
         width: 94%;
         margin-left: 3%;
         
+    }
+    .bloco{
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"pro" "inter"
     }
     #T{
         grid-area: T;

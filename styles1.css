@@ -52,7 +52,7 @@ h1{
 }
 .bloco{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-template-areas: "imagem texto";
     gap: 35px;
