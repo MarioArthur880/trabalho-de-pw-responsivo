@@ -20,7 +20,7 @@ h1{
 
     display: grid;
 
-    grid-template-columns: 20% 80% ;
+    grid-template-columns: 1fr ;
     grid-template-rows: auto;
     
     grid-template-areas: "inter"
@@ -140,6 +140,16 @@ a{
                             "bloco6";
                             gap: 15px;
         justify-items: center;
+    }
+    .bloco{
+        display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: auto;
+         grid-template-areas: "imagem" "texto";
+          gap: 35px;
+         padding: 5px;
+          overflow: hidden;
+         align-items: center;
     }
     .imagem{
         grid-area: imagem;
